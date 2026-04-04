@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     menuToggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
-        // Animación simple de hamburguesa a X (opcional)
     });
 
     // Cerrar menú al hacer click en un link
