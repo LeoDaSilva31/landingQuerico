@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-# Sitemap oficial para Render
-Sitemap: https://panificadosquerico.obersys.com/sitemap.xml

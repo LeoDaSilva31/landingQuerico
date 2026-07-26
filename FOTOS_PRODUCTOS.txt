@@ -1,0 +1,21 @@
+Guardá estas imágenes en la carpeta:  public/img/
+
+Formato recomendado: .webp (o .jpg si no tenés convertidor)
+Tamaño ideal: 600x600 px mínimo, cuadradas o casi cuadradas
+
+─────────────────────────────────────────
+NOMBRE DEL ARCHIVO         PRODUCTO
+─────────────────────────────────────────
+pan-artesanal.webp         Pan Artesanal
+prepizzas.webp             Prepizzas
+torraditas-biscochitos.webp   Torraditas y Biscochitos
+pan-panchos.webp           Pan para Panchos
+tapas-empanadas.webp       Tapas de Empanadas
+masas-anis.webp            Masas con Anís
+─────────────────────────────────────────
+
+IMPORTANTE: el nombre del archivo debe ser exactamente igual
+(minúsculas, con guiones, con .webp al final).
+
+Si usás .jpg en lugar de .webp, avisale al desarrollador
+para actualizar la extensión en components/Productos.jsx.

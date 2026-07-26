@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://panificadosquerico.obersys.com/sitemap.xml
