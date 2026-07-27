@@ -3,7 +3,7 @@ import './globals.css'
 const DOMAIN = 'https://panificadosquerico.obersys.com'
 
 export const metadata = {
-  title: '¡Que Rico! | Panadería Artesanal en Oberá, Misiones',
+  title: 'Que Rico | Panadería Artesanal en Oberá, Misiones',
   description:
     'Más de 20 años elaborando pan artesanal en Oberá. Distribución mayorista diaria en Campo Ramón, Villa Bonita, San Martín, Guaraní, Caayarí y toda la zona centro de Misiones.',
   keywords: [
@@ -16,20 +16,35 @@ export const metadata = {
     'panaderia campo ramon',
     'panaderia villa bonita misiones',
   ],
+  icons: {
+    icon: [
+      { url: '/img/icon.png', type: 'image/png' },
+    ],
+    shortcut: '/img/icon.png',
+    apple: '/img/icon.png',
+  },
   openGraph: {
-    title: '¡Que Rico! | Panadería Artesanal en Oberá, Misiones',
+    title: 'Que Rico | Panadería Artesanal en Oberá, Misiones',
     description:
       'Distribución mayorista de panificados artesanales en Oberá y zona centro. Más de 20 años de trayectoria.',
     url: DOMAIN,
-    siteName: '¡Que Rico! Panadería',
+    siteName: 'Que Rico Panadería',
     locale: 'es_AR',
     type: 'website',
-    images: [{ url: `${DOMAIN}/img/logoPanaderia.webp` }],
+    images: [
+      {
+        url: `${DOMAIN}/img/fachada.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Que Rico Panadería Artesanal - Oberá, Misiones',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '¡Que Rico! | Panadería Artesanal en Oberá',
+    title: 'Que Rico | Panadería Artesanal en Oberá',
     description: 'Pan artesanal fresco con distribución diaria en zona centro de Misiones.',
+    images: [`${DOMAIN}/img/fachada.jpg`],
   },
   robots: { index: true, follow: true },
   alternates: { canonical: `${DOMAIN}/` },
@@ -38,12 +53,13 @@ export const metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Bakery',
-  name: '¡Que Rico! Panadería Artesanal',
+  name: 'Que Rico Panadería Artesanal',
   description:
     'Panadería artesanal con más de 20 años de trayectoria. Distribución mayorista en Oberá y zona centro de Misiones.',
   url: DOMAIN,
   telephone: '+5491168044215',
-  image: `${DOMAIN}/img/logoPanaderia.webp`,
+  image: `${DOMAIN}/img/fachada.jpg`,
+  logo: `${DOMAIN}/img/logoPanaderia.webp`,
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Oberá',
