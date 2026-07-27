@@ -9,7 +9,7 @@ export default function Hero() {
           priority="true"
         />
         <h1 className="hero-title">
-          Pan artesanal fresco,<br />
+          <span className="sr-only">Que Rico | </span>Pan artesanal fresco,<br />
           <span className="hero-accent">directo a tu comercio</span>
         </h1>
         <p className="hero-sub">
