@@ -444,6 +444,27 @@ ul { list-style: none; }
 .footer-bottom a { color: var(--accent); transition: opacity .2s; }
 .footer-bottom a:hover { opacity: .8; }
 
+/* ─── OBERSYS CREDIT BAR ─── */
+.obersys-credit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 24px 90px;
+  font-size: .68rem;
+  letter-spacing: .05em;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+.obersys-credit a { display: inline-flex; align-items: center; gap: 5px; }
+.obersys-credit-logo {
+  height: 20px;
+  width: auto;
+  vertical-align: middle;
+}
+@media (min-width: 768px) {
+  .obersys-credit { padding-bottom: 22px; }
+}
+
 /* ═══════════════════════════════════════════
    15. FLOATING WA
 ═══════════════════════════════════════════ */

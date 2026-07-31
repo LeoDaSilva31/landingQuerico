@@ -3,7 +3,8 @@ import './globals.css'
 const DOMAIN = 'https://panificadosquerico.obersys.com'
 
 export const metadata = {
-  title: 'Que Rico | Panadería Artesanal en Oberá, Misiones',
+  metadataBase: new URL(DOMAIN),
+  title: 'Panificados Que Rico | Panadería en Oberá, Misiones',
   description:
     'Más de 20 años elaborando pan artesanal en Oberá. Distribución mayorista diaria en Campo Ramón, Villa Bonita, San Martín, Guaraní, Caayarí y toda la zona centro de Misiones.',
   keywords: [
@@ -18,13 +19,13 @@ export const metadata = {
   ],
   icons: {
     icon: [
-      { url: '/img/icon.png', type: 'image/png' },
+      { url: '/img/icon.png', type: 'image/png', sizes: '512x512' },
     ],
     shortcut: '/img/icon.png',
-    apple: '/img/icon.png',
+    apple: { url: '/img/icon.png', sizes: '180x180' },
   },
   openGraph: {
-    title: 'Que Rico | Panadería Artesanal en Oberá, Misiones',
+    title: 'Panificados Que Rico | Panadería en Oberá, Misiones',
     description:
       'Distribución mayorista de panificados artesanales en Oberá y zona centro. Más de 20 años de trayectoria.',
     url: DOMAIN,
@@ -42,7 +43,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Que Rico | Panadería Artesanal en Oberá',
+    title: 'Panificados Que Rico | Panadería en Oberá, Misiones',
     description: 'Pan artesanal fresco con distribución diaria en zona centro de Misiones.',
     images: [`${DOMAIN}/img/fachada.jpg`],
   },
@@ -53,7 +54,7 @@ export const metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Bakery',
-  name: 'Que Rico Panadería Artesanal',
+  name: 'Panificados Que Rico',
   description:
     'Panadería artesanal con más de 20 años de trayectoria. Distribución mayorista en Oberá y zona centro de Misiones.',
   url: DOMAIN,
@@ -87,6 +88,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
+        <link rel="icon" type="image/png" sizes="512x512" href="/img/icon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/icon.png" />
+        <meta name="theme-color" content="#c8722a" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

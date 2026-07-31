@@ -35,10 +35,15 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>
-          &copy; {year} ¡Que Rico! &nbsp;|&nbsp; Desarrollado por{' '}
-          <a href="https://obersys.com" target="_blank" rel="noopener noreferrer">OberSys.com</a>
-        </p>
+        <p>&copy; {year} ¡Que Rico!</p>
+      </div>
+
+      <div className="obersys-credit">
+        <span style={{color:"#c4c2cc",fontFamily:"system-ui,sans-serif",fontSize:".68rem",letterSpacing:".05em"}}>Este sitio fue desarrollado por el equipo de</span>
+        <a href="https://obersys.com" target="_blank" rel="noopener noreferrer" aria-label="OberSys">
+          <img src="/img/logo_obersys.webp" alt="" className="obersys-credit-logo" />
+          <span style={{color:'#ffffff',fontFamily:'system-ui,sans-serif',fontSize:'.68rem',letterSpacing:'.05em',fontWeight:600}}>OberSys</span>
+        </a>
       </div>
     </footer>
   )

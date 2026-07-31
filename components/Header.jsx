@@ -1,9 +1,17 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { NAV_LINKS } from '@/lib/data'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const menuRef = useRef(null)
+
+  useEffect(() => {
+    const el = menuRef.current
+    if (!el) return
+    if (open) el.removeAttribute('inert')
+    else el.setAttribute('inert', '')
+  }, [open])
 
   return (
     <header className="header">
@@ -21,7 +29,7 @@ export default function Header() {
           <span /><span /><span />
         </button>
 
-        <ul className={`nav-menu${open ? ' nav-menu--open' : ''}`} role="list">
+        <ul ref={menuRef} className={`nav-menu${open ? ' nav-menu--open' : ''}`} role="list" aria-hidden={!open}>
           {NAV_LINKS.map(({ href, label }) => (
             <li key={href}>
               <a href={href} className="nav-link" onClick={() => setOpen(false)}>{label}</a>
