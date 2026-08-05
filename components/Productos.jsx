@@ -4,12 +4,19 @@ import Reveal from '@/components/Reveal'
 import { PRODUCTS } from '@/lib/data'
 
 const GALLERY = [
-  { src: '/img/pan-artesanal.webp',          alt: 'Pan artesanal Que Rico Oberá' },
-  { src: '/img/prepizzas.webp',               alt: 'Prepizzas artesanales Oberá' },
-  { src: '/img/torraditas-biscochitos.webp',  alt: 'Torraditas y biscochitos Que Rico' },
-  { src: '/img/pan-panchos.webp',             alt: 'Pan para panchos Oberá' },
-  { src: '/img/tapas-empanadas.webp',         alt: 'Tapas de empanadas artesanales' },
-  { src: '/img/masas-anis.webp',              alt: 'Masas con anís panadería Que Rico' },
+  { src: '/img/pan.webp',                   alt: 'Pan artesanal Que Rico Oberá' },
+  { src: '/img/pan1.webp',                  alt: 'Pan fresco del horno Que Rico' },
+  { src: '/img/prepizza.webp',              alt: 'Prepizzas artesanales Oberá' },
+  { src: '/img/prepizza1.webp',             alt: 'Prepizzas Que Rico panadería' },
+  { src: '/img/torraditas.webp',            alt: 'Torraditas Que Rico Oberá' },
+  { src: '/img/torraditas1.webp',           alt: 'Torraditas crocantes panadería' },
+  { src: '/img/pan_pancho.webp',            alt: 'Pan para panchos Oberá' },
+  { src: '/img/pan_hamburguesa.webp',       alt: 'Pan para hamburguesas Que Rico' },
+  { src: '/img/tapas_empanadas.webp',       alt: 'Tapas de empanadas artesanales' },
+  { src: '/img/tapas_pastelitos.webp',      alt: 'Tapas de pastelitos Que Rico' },
+  { src: '/img/pastelitos.webp',            alt: 'Pastelitos artesanales panadería' },
+  { src: '/img/pan_rallado.webp',           alt: 'Pan rallado Que Rico' },
+  { src: '/img/pan_rallado_embasado.webp',  alt: 'Pan rallado embasado Que Rico' },
 ]
 
 const ITEM_W = 280 + 16
