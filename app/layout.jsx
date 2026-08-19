@@ -4,18 +4,18 @@ const DOMAIN = 'https://panificadosquerico.obersys.com'
 
 export const metadata = {
   metadataBase: new URL(DOMAIN),
-  title: 'Panificados Que Rico | Panadería en Oberá, Misiones',
+  title: 'Que Rico Panificados | Distribución Mayorista de Panificados | Oberá, Misiones',
   description:
-    'Más de 20 años elaborando pan artesanal en Oberá. Distribución mayorista diaria en Campo Ramón, Villa Bonita, San Martín, Guaraní, Caayarí y toda la zona centro de Misiones.',
+    'Proveemos panificados artesanales frescos a comercios, almacenes y distribuidores de zona centro de Misiones. Distribución diaria desde Oberá — más de 20 años en el rubro.',
   keywords: [
-    'panaderia obera',
-    'panificados mayoristas misiones',
-    'pan artesanal obera',
-    'panaderia que rico',
-    'facturas obera misiones',
-    'reparto pan zona centro misiones',
-    'panaderia campo ramon',
-    'panaderia villa bonita misiones',
+    'distribucion mayorista panificados misiones',
+    'proveedor pan artesanal obera',
+    'panificados para comercios misiones',
+    'distribuidor panificados zona centro misiones',
+    'pan mayorista campo ramon villa bonita',
+    'que rico panificados obera',
+    'reparto panificados misiones',
+    'panaderia b2b obera',
   ],
   icons: {
     icon: [
@@ -25,11 +25,11 @@ export const metadata = {
     apple: { url: '/img/icon.png', sizes: '180x180' },
   },
   openGraph: {
-    title: 'Panificados Que Rico | Panadería en Oberá, Misiones',
+    title: 'Que Rico Panificados | Distribución Mayorista de Panificados | Oberá, Misiones',
     description:
-      'Distribución mayorista de panificados artesanales en Oberá y zona centro. Más de 20 años de trayectoria.',
+      'Proveemos panificados artesanales frescos a comercios, almacenes y distribuidores de zona centro de Misiones. Distribución diaria desde Oberá — más de 20 años en el rubro.',
     url: DOMAIN,
-    siteName: 'Que Rico Panadería',
+    siteName: 'Que Rico Panificados',
     locale: 'es_AR',
     type: 'website',
     images: [
@@ -43,8 +43,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Panificados Que Rico | Panadería en Oberá, Misiones',
-    description: 'Pan artesanal fresco con distribución diaria en zona centro de Misiones.',
+    title: 'Que Rico Panificados | Distribución Mayorista de Panificados | Oberá, Misiones',
+    description: 'Proveemos panificados artesanales frescos a comercios, almacenes y distribuidores de zona centro de Misiones. Distribución diaria desde Oberá.',
     images: [`${DOMAIN}/img/fachada.jpg`],
   },
   robots: { index: true, follow: true },
@@ -54,9 +54,9 @@ export const metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Bakery',
-  name: 'Panificados Que Rico',
+  name: 'Que Rico Panificados',
   description:
-    'Panadería artesanal con más de 20 años de trayectoria. Distribución mayorista en Oberá y zona centro de Misiones.',
+    'Proveemos panificados artesanales frescos a comercios, almacenes y distribuidores de zona centro de Misiones. Distribución diaria desde Oberá — más de 20 años en el rubro.',
   url: DOMAIN,
   telephone: '+5491168044215',
   image: `${DOMAIN}/img/fachada.jpg`,
