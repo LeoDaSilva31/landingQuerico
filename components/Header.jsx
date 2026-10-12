@@ -16,8 +16,8 @@ export default function Header() {
   return (
     <header className="header">
       <nav className="navbar container" aria-label="Navegación principal">
-        <a href="#inicio" className="nav-brand">
-          <img src="/img/logoPanaderia.webp" alt="¡Que Rico! Panadería Artesanal" className="nav-logo" />
+        <a href="/" className="nav-brand" aria-label="Que Rico Panificados, inicio">
+          <img src="/img/logoPanaderia.webp" alt="¡Que Rico! Panificados" className="nav-logo" width="75" height="50" />
         </a>
 
         <button

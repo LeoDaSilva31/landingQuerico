@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-nav">
-          <h4>Navegación</h4>
+          <p className="footer-titulo">Navegación</p>
           <ul>
             {NAV_LINKS.map(({ href, label }) => (
               <li key={href}><a href={href}>{label}</a></li>
@@ -25,7 +25,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-zona">
-          <h4>Zona de reparto</h4>
+          <p className="footer-titulo">Zona de reparto</p>
           <ul>
             {ZONA_REPARTO.map(({ nombre }) => (
               <li key={nombre}>{nombre}</li>
@@ -39,10 +39,10 @@ export default function Footer() {
       </div>
 
       <div className="obersys-credit">
-        <span style={{color:"#c4c2cc",fontFamily:"system-ui,sans-serif",fontSize:".68rem",letterSpacing:".05em"}}>Este sitio fue desarrollado por el equipo de</span>
-        <a href="https://obersys.com" target="_blank" rel="noopener noreferrer" aria-label="OberSys">
-          <img src="/img/logo_obersys.webp" alt="" className="obersys-credit-logo" />
-          <span style={{color:'#ffffff',fontFamily:'system-ui,sans-serif',fontSize:'.68rem',letterSpacing:'.05em',fontWeight:600}}>OberSys</span>
+        <a href="https://www.obersys.com" target="_blank" rel="noopener">
+          <span>Desarrollado por</span>
+          <img src="/img/logo_obersys.webp" alt="OberSys" className="obersys-credit-logo" width="20" height="20" />
+          <strong>OberSys</strong>
         </a>
       </div>
     </footer>
