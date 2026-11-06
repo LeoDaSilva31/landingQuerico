@@ -215,10 +215,11 @@ ul, ol { list-style: none; }
 
 .nav-menu {
   position: fixed;
-  top: var(--alto-header);
+  top: var(--menu-top, var(--alto-header));
   right: 0;
   width: 100%;
-  height: calc(100dvh - var(--alto-header));
+  height: calc(100dvh - var(--menu-top, var(--alto-header)));
+  overflow-y: auto;
   transform: translateX(100%);
   visibility: hidden;
   background: var(--white);

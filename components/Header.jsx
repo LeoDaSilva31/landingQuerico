@@ -10,6 +10,7 @@ export default function Header() {
   const [escritorio, setEscritorio] = useState(false)
   const menuRef = useRef(null)
   const botonRef = useRef(null)
+  const headerRef = useRef(null)
 
   /* Detecta escritorio: allí el menú es una barra fija y siempre debe ser interactiva */
   useEffect(() => {
@@ -31,9 +32,17 @@ export default function Header() {
     else el.removeAttribute('inert')
   }, [open, escritorio])
 
-  /* Menú móvil abierto: Escape lo cierra y devuelve el foco; se bloquea el scroll del fondo */
+  /* Menú móvil abierto: Escape lo cierra y devuelve el foco; se bloquea el scroll del fondo.
+     El panel arranca justo debajo del header real (la cinta superior desplaza al header),
+     así que se mide su borde inferior en vez de asumir una altura fija. */
   useEffect(() => {
     if (!open) return
+    const ubicarPanel = () => {
+      const base = headerRef.current?.getBoundingClientRect().bottom ?? 0
+      menuRef.current?.style.setProperty('--menu-top', `${Math.max(0, Math.round(base))}px`)
+    }
+    ubicarPanel()
+    window.addEventListener('resize', ubicarPanel)
     const onKey = (e) => {
       if (e.key === 'Escape') {
         setOpen(false)
@@ -43,6 +52,7 @@ export default function Header() {
     document.addEventListener('keydown', onKey)
     document.body.style.overflow = 'hidden'
     return () => {
+      window.removeEventListener('resize', ubicarPanel)
       document.removeEventListener('keydown', onKey)
       document.body.style.overflow = ''
     }
@@ -51,7 +61,7 @@ export default function Header() {
   const ocultoParaLectores = !escritorio && !open
 
   return (
-    <header className="header">
+    <header ref={headerRef} className="header">
       <nav className="navbar container" aria-label="Navegación principal">
         <a href="/" className="nav-brand" aria-label="Que Rico Panificados, inicio">
           <img src="/img/logoPanaderia.webp" alt="" className="nav-logo" width="75" height="50" />
