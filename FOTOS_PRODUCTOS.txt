@@ -1,21 +1,10 @@
-Guardá estas imágenes en la carpeta:  public/img/
+Imágenes del sitio: public/img/
 
-Formato recomendado: .webp (o .jpg si no tenés convertidor)
-Tamaño ideal: 600x600 px mínimo, cuadradas o casi cuadradas
+Formato: WebP cuadrado 800x800 (liviano, ~30-200 KB cada una).
+Los originales PNG se guardan en originales-img/ (fuera de public y del repo).
 
-─────────────────────────────────────────
-NOMBRE DEL ARCHIVO         PRODUCTO
-─────────────────────────────────────────
-pan-artesanal.webp         Pan Artesanal
-prepizzas.webp             Prepizzas
-torraditas-biscochitos.webp   Torraditas y Biscochitos
-pan-panchos.webp           Pan para Panchos
-tapas-empanadas.webp       Tapas de Empanadas
-masas-anis.webp            Masas con Anís
-─────────────────────────────────────────
-
-IMPORTANTE: el nombre del archivo debe ser exactamente igual
-(minúsculas, con guiones, con .webp al final).
-
-Si usás .jpg en lugar de .webp, avisale al desarrollador
-para actualizar la extensión en components/Productos.jsx.
+Para agregar o cambiar una foto de producto:
+1. Convertirla a WebP 800x800 y guardarla en public/img/ (nombre en minúsculas y con guiones).
+2. Completar los campos imagen y alt del producto en lib/data.jsx (arreglo PRODUCTOS).
+   imagen: null → se muestra "Foto próximamente".
+Las fotos de la franja del hero están en FOTOS_HERO (lib/data.jsx).

@@ -14,11 +14,11 @@ export default function Productos() {
         </Reveal>
 
         <div className="prod-grid">
-          {PRODUCTOS.map(({ nombre, detalle, imagen }, indice) => (
+          {PRODUCTOS.map(({ nombre, detalle, imagen, alt }, indice) => (
             <Reveal key={nombre} delay={(indice % 4) * 70}>
               <article className="prod-card">
                 {imagen ? (
-                  <img src={imagen} alt={nombre} className="prod-foto" loading="lazy" width="400" height="400" />
+                  <img src={imagen} alt={alt || nombre} className="prod-foto" loading="lazy" decoding="async" width="800" height="800" />
                 ) : (
                   <div className="prod-foto prod-foto--vacia" aria-hidden="true">
                     <span>Foto próximamente</span>

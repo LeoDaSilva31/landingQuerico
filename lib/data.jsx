@@ -22,20 +22,19 @@ export const NAV_LINKS = [
 ]
 
 /* ── Productos (el orden de esta lista es el orden en la página) ──
-   imagen: null → se muestra un espacio neutro hasta tener la foto.
-   Para agregarla: guardar el archivo en public/img/ y completar la ruta. */
+   imagen: ruta dentro de public/img/ (WebP cuadrado 800x800).
+   alt: descripción real de la foto, para accesibilidad y SEO. */
 export const PRODUCTOS = [
-  { nombre: 'Pan',                       detalle: 'Pan de mesa fresco, recién horneado',     imagen: '/img/pan1.webp' },
-  { nombre: 'Prepizzas',                 detalle: 'Listas para hornear, al por mayor',       imagen: '/img/prepizza1.webp' },
-  { nombre: 'Torraditas y bizcochitos',  detalle: 'Crocantes, ideales para la merienda',     imagen: '/img/torraditas1.webp' },
-  { nombre: 'Pan para panchos',          detalle: 'Tiernos y en el tamaño justo',            imagen: '/img/pan_pancho.webp' },
-  { nombre: 'Pan para hamburguesas',     detalle: 'Suaves, para gastronomía y reventa',      imagen: '/img/pan_hamburguesa.webp' },
-  { nombre: 'Tapas de empanadas',        detalle: 'Para horno y fritura, por docena',        imagen: '/img/tapas_empanadas.webp' },
-  { nombre: 'Tapas de pastelitos',       detalle: 'Listas para rellenar',                    imagen: '/img/tapas_pastelitos.webp' },
-  { nombre: 'Masas con anís',            detalle: 'Sabor tradicional de nuestra panadería',  imagen: null },
-  { nombre: 'Pan rallado',               detalle: 'Envasado, para rebozar y cocinar',        imagen: '/img/pan_rallado_envasado.webp' },
-  { nombre: 'Rosquitas glaseadas',       detalle: 'Dulces, para acompañar el mate',          imagen: null },
-  { nombre: 'Torniaditos',               detalle: 'Consultá presentaciones por WhatsApp',    imagen: null },
+  { nombre: 'Pan',                       detalle: 'Pan de mesa fresco, recién horneado',     imagen: '/img/pan-blanco.webp',         alt: 'Pan blanco de mesa recién horneado, suelto y en bandeja, listo para empaquetar' },
+  { nombre: 'Pan de salvado',            detalle: 'Pan negro de salvado, recién elaborado',  imagen: '/img/pan-salvado-bolsa.webp',  alt: 'Pan negro de salvado suelto y en bolsa con la marca Que Rico' },
+  { nombre: 'Prepizzas',                 detalle: 'Listas para hornear, al por mayor',       imagen: '/img/prepizza.webp',           alt: 'Prepizza envasada en bolsa transparente con la marca Que Rico' },
+  { nombre: 'Torraditas y bizcochitos',  detalle: 'Crocantes, ideales para la merienda',     imagen: '/img/torraditas-bolsa.webp',   alt: 'Bolsas de torraditas y bizcochitos con la marca Que Rico, listas para la góndola' },
+  { nombre: 'Pan para panchos',          detalle: 'Tiernos y en el tamaño justo',            imagen: '/img/pan-pancho.webp',         alt: 'Pan para panchos tradicional, blando y dorado' },
+  { nombre: 'Pan para hamburguesas',     detalle: 'Suaves, para gastronomía y reventa',      imagen: '/img/pan-hamburguesa.webp',    alt: 'Panes de hamburguesa con sésamo sobre una tabla de madera' },
+  { nombre: 'Tapas de empanadas',        detalle: 'Para horno y fritura, por docena',        imagen: '/img/tapas-empanadas.webp',    alt: 'Pilas de tapas de empanadas crudas, listas para rellenar' },
+  { nombre: 'Tapas de pastelitos',       detalle: 'Listas para rellenar',                    imagen: '/img/pastelitos.webp',         alt: 'Pastelitos dorados y fritos sobre una bandeja' },
+  { nombre: 'Pan rallado',               detalle: 'Envasado, para rebozar y cocinar',        imagen: '/img/pan-rallado-bolsa.webp',  alt: 'Bolsa de pan rallado envasado' },
+  { nombre: 'Torniaditos',               detalle: 'Consultá presentaciones por WhatsApp',    imagen: '/img/torniaditos-anis.webp',   alt: 'Torniaditos de anís sueltos y en bolsa con la marca Que Rico' },
 ]
 
 /* ── Con quién trabajamos ── */

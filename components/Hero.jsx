@@ -1,13 +1,5 @@
 import BotonWhatsApp from '@/components/BotonWhatsApp'
 
-/* Fotos de la franja inferior del hero */
-const FOTOS_HERO = [
-  { src: '/img/pan2.webp',       alt: 'Pan recién salido del horno' },
-  { src: '/img/prepizza.webp',   alt: 'Prepizzas apiladas' },
-  { src: '/img/torraditas.webp', alt: 'Bizcochitos en canasta' },
-  { src: '/img/pan_rallado.webp', alt: 'Pan rallado' },
-]
-
 export default function Hero() {
   return (
     <section id="inicio" className="hero">
@@ -36,11 +28,6 @@ export default function Hero() {
         />
       </div>
 
-      <div className="hero-franja">
-        {FOTOS_HERO.map(({ src, alt }) => (
-          <img key={src} src={src} alt={alt} loading="lazy" />
-        ))}
-      </div>
     </section>
   )
 }

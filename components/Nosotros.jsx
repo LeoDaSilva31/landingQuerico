@@ -4,7 +4,7 @@ export default function Nosotros() {
   return (
     <section id="nosotros" className="nosotros section-padding">
       <div className="container nosotros-layout">
-        <Reveal>
+        <Reveal className="nosotros-texto">
           <p className="eyebrow">Nuestra historia</p>
           <h2 className="section-title">Panadería de Oberá<br />desde 1999</h2>
           <p className="nosotros-text">
@@ -13,6 +13,19 @@ export default function Nosotros() {
             para que vos puedas ofrecer siempre lo mejor.
           </p>
         </Reveal>
+
+        <Reveal className="nosotros-area-foto">
+          <img
+            src="/img/carro-pan-horno.webp"
+            alt="Carro del horno cargado de bandejas de pan blanco recién horneado"
+            className="nosotros-foto"
+            loading="lazy"
+            decoding="async"
+            width="720"
+            height="1280"
+          />
+        </Reveal>
+
         <div className="nosotros-grid">
           <Reveal delay={100}>
             <div className="nosotros-card">
